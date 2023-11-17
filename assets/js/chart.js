@@ -83,18 +83,12 @@ import("./assets/js/lib/chartjs/chart.js").then((e) => {
 
 			data.datasets[0].data.forEach((datapoint, index) => {
 				const { x, y } = chart.getDatasetMeta(0).data[index].tooltipPosition();
-
-				let textXPosition = x >= 110 ? 'left' : 'right';
-
-				let xLine = x >= 110 ? x + 30 : x - 30;
-				let yLine = y >= 110 ? y + 30 : y - 30;
-
+				ctx.textAlign = 'center';
 				ctx.font = '14px Inter';
-				ctx.textAlign = textXPosition;
-				ctx.fillStyle = colors[theme].textColor;
+				ctx.fillStyle = '#fff';
 				ctx.textBaseline = 'middle';
-
-				ctx.fillText(`${datapoint}%`, xLine, yLine);
+				let toolTipText = datapoint != '0' ? datapoint + '%' : '';
+				ctx.fillText(toolTipText, x, y);
 			});
 		},
 	};
@@ -123,18 +117,12 @@ import("./assets/js/lib/chartjs/chart.js").then((e) => {
 
 				data.datasets[0].data.forEach((datapoint, index) => {
 					const { x, y } = chart.getDatasetMeta(0).data[index].tooltipPosition();
-
-					let textXPosition = x >= 110 ? 'left' : 'right';
-
-					let xLine = x >= 110 ? x + 30 : x - 30;
-					let yLine = y >= 110 ? y + 30 : y - 30;
-
+					ctx.textAlign = 'center';
 					ctx.font = '14px Inter';
-					ctx.textAlign = textXPosition;
-					ctx.fillStyle = colors[theme].textColor;
+					ctx.fillStyle = '#fff';
 					ctx.textBaseline = 'middle';
-
-					ctx.fillText(`${datapoint}%`, xLine, yLine);
+					let toolTipText = datapoint != '0' ? datapoint + '%' : '';
+					ctx.fillText(toolTipText, x, y);
 				});
 			},
 		};
@@ -148,7 +136,7 @@ import("./assets/js/lib/chartjs/chart.js").then((e) => {
 			plugins: [customDataLabels],
 		});
 
-		donutBig.data.datasets[0].backgroundColor = [colors[theme].purple, colors[theme].yellow];
+		donutBig.data.datasets[0].backgroundColor = [colors[theme].yellow, colors[theme].purple, colors[theme].sky];
 		donutBig.update()
 	}
 
