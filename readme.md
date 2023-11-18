@@ -1,4 +1,4 @@
-# Business Loan Calculator WordPress Widget by [Calculator.iO](https://www.calculator.io/ "Calculator.iO Homepage")
+# Business Loan Calculator Widget for WordPress
 
 Free business loan calculator that lets entrepreneurs estimate monthly payments, calculate interest on loans, and understand the total cost of the business loan.
 
