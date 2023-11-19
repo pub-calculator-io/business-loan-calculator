@@ -1,4 +1,4 @@
-=== Business Loan Calculator by www.calculator.io ===
+=== CI Business loan calculator ===
 Contributors: calculatorio
 Tags: business loan calculator, loan repayment calculator, commercial loan terms, small business financing, business loan interest rate, calculate business loan, loan amortization schedule, commercial lending calculator, business loan repayment, SME loan calculator
 Requires at least: 5.0

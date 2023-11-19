@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Business Loan Calculator by www.calculator.io
+Plugin Name: CI Business loan calculator
 Plugin URI: https://www.calculator.io/business-loan-calculator/
 Description: Free business loan calculator that lets entrepreneurs estimate monthly payments, calculate interest on loans, and understand the total cost of the business loan.
 Version: 1.0.0
