@@ -11,7 +11,7 @@ function calculate(){
 	const otherFee = input.get('other_fee').val();
 	const payBackText = input.get('pay_back').raw();
 	if(!loanTerm) {
-		input.error('loan_term_year', 'Please enter loan term');
+		input.error('loan_term_year', 'Enter the loan term');
 	}
 	if(!input.valid()) return;
 	const originationFeeValue = originationFee / 100 * amount;

@@ -3,7 +3,6 @@
 Free business loan calculator that lets entrepreneurs estimate monthly payments, calculate interest on loans, and understand the total cost of the business loan.
 
 ![Business Loan Calculator Input Form](/assets/images/screenshot-1.png "Business Loan Calculator Input Form")
-![Business Loan Calculator Calculation Results](/assets/images/screenshot-2.png "Business Loan Calculator Calculation Results")
 
 ## Installation
 
